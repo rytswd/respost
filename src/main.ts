@@ -13,7 +13,7 @@ async function run() {
 
     const options = {
       headers: {
-        Authorization: "token $GITHUB_TOKEN",
+        Authorization: "token " + process.env.GITHUB_TOKEN,
         "Content-Type": "application/json"
       }
     };
