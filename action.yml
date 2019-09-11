@@ -1,10 +1,18 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: "Respost - Response Post"
+description: "Respost provides a simple step for commenting back to issue, pull request, and comments"
+author: "rytswd"
+branding:
+  icon: message-square
+  color: green
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+  title:
+    description: "Message Title"
+    default: "Response from respost"
+  body:
+    description: "Message body to write back"
+    default: "Sample message from respost\n
+    \n
+    --- created by respost"
 runs:
-  using: 'node12'
-  main: 'lib/main.js'
+  using: "node12"
+  main: "lib/main.js"
