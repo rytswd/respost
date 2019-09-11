@@ -5,14 +5,14 @@ jobs:
   comment:
     runs-on: ubuntu-latest
     steps:
-      - uses: rytswd/respost@master
+      - uses: rytswd/respost@v0.1.0
         with:
           title: Respost Custom Title from step 1, for PR
           body: "Hello, World! Respost is here, making your GitHub Actions workflow even easier!"
       - name: Some random step
         run: |
           echo This step simply runs, as there is no condition check
-      - uses: rytswd/respost@master
+      - uses: rytswd/respost@v0.1.0
         with:
           title: Respost Custom Title from step 3, for PR
           body: "This just illustrates how multiple respost can be used, and also how they are sequential"

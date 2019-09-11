@@ -9,12 +9,12 @@ jobs:
         id: comvent
         with:
           keyword: "/respost test$" # This is the regex string to match against
-      - uses: rytswd/respost@master
+      - uses: rytswd/respost@v0.1.0
         with:
           title: Respost as a Bot - response to command
           body: "Hello, thank you for calling me with `/respost test` command!"
         if: steps.comvent.outputs.comvent != ''
-      - uses: rytswd/respost@master
+      - uses: rytswd/respost@v0.1.0
         with:
           title: Respost as a Bot - generic message
           body: "Do you want to send a command by writing `/respost test`?"
