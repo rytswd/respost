@@ -1,0 +1,21 @@
+name: Respost - Write comment to new PR event
+on: issue_comment
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: rytswd/comvent@v0.1.0
+        id: comvent
+        with:
+          keyword: "\/respost test$" # This is the regex string to match against
+      - uses: rytswd/respost@master
+        with:
+          title: Respost as a Bot - response to command
+          body: "Hello, thank you for calling me with `\/respost test` command!"
+        if: steps.comvent.outputs.comvent != ''
+      - uses: rytswd/respost@master
+        with:
+          title: Respost as a Bot - generic message
+          body: "Do you want to send a command by writing `\/respost test`?"
+        if: steps.comvent.outputs.comvent == ''
