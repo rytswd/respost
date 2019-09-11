@@ -1,4 +1,4 @@
-name: Respost - Write comment to new PR event
+name: Respost - Write comment to new comment event (using comvent)
 on: issue_comment
 
 jobs:
