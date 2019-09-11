@@ -1,6 +1,6 @@
 import { getInput, setOutput, setFailed } from "@actions/core";
 import { readFileSync } from "fs";
-import request from "request";
+import axios from "axios";
 
 async function run() {
   try {
@@ -12,18 +12,20 @@ async function run() {
     const url = await getAddress();
 
     const options = {
-      url: url,
-      method: "POST",
       headers: {
         Authorization: "token $GITHUB_TOKEN",
         "Content-Type": "application/json"
-      },
-      postData: message
+      }
     };
 
-    request(options, (err, im, res) => {
-      console.log("respost sent, status: ", err);
-    });
+    axios
+      .post(url, message, options)
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
   } catch (error) {
     setFailed(error.message);
   }
