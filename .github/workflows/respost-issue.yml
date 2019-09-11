@@ -16,4 +16,5 @@ jobs:
         with:
           title: Respost Custom Title from step 3, for Issue
           body: "This just illustrates how multiple respost can be used, and also how they are sequential"
-        if: steps.comvent.outputs.comvent != ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
