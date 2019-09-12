@@ -9,7 +9,7 @@ Simple HTTP POST to write to the Issue and PR.
 ![Issue Creation, with Comvent](docs/respost_issue_example.gif)
 
 > **WARNING**: I have edited the above recording, it was originally around 90 sec.  
-> **NOTE**: [`comvent`](github.com/rytswd/comvent) is used to provide bot-like comment parsing.
+> **NOTE**: [`comvent`](http://github.com/rytswd/comvent) is used to provide bot-like comment parsing.
 
 ## **HOW**: Example - Above, with YAML
 
