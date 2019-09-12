@@ -20,11 +20,12 @@ async function run() {
 
     axios
       .post(url, message, options)
-      .then(function(response) {
-        console.log(response);
+      .then(_ => {
+        console.log("respost completed");
       })
-      .catch(function(error) {
-        console.log(error);
+      .catch(err => {
+        console.log("respost failed, with error: ", err);
+        setFailed(err);
       });
   } catch (error) {
     setFailed(error.message);
