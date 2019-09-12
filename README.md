@@ -40,4 +40,4 @@ GitHub Actions can be defined either in JavaScript or Docker container.
 Docker container allows full segregation and secure setup, but it takes about ~10sec to build and start up.  
 When you wish to use GitHub Actions on frequently used events such as PR and Issue Comments, this can easily add up.
 
-TypeScript can work seamlessly with JSON object, and the [axios](github.com/axios/axios) provides easy HTTP POST handling.
+TypeScript can work seamlessly with JSON object, and [axios](github.com/axios/axios) provides easy HTTP POST handling.
