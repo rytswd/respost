@@ -1,3 +1,13 @@
+# ⚠️ UPDATE: Jan 2021 - THIS IS NO LONGER MAINTAINED
+
+This repository tried to support adding a comment. There is a much better support from GitHub in https://github.com/actions/github-script.
+
+You can use the `github-script` with Comvent (https://github.com/rytswd/comvent) to provide ChatBot like support.
+
+Comvent is still being supported.
+
+---
+
 # Respost - Response Post
 
 ## **WHAT**: Send Response from GitHub Actions
